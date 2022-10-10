@@ -13,11 +13,12 @@ nav{
 .navbar{
   display: flex;
   flex-direction: row;
+
 }
 
 .nav-list{
   width: 50%;
-
+  padding: inherit;
 }
 
 .carrt{
@@ -107,7 +108,8 @@ nav{
 
 
 #services{
-  margin: 34px;
+  align-items: center;
+  margin: 2px 2px 2px 2px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -202,13 +204,77 @@ footer{
   text-align: center;
 }
 
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+
+.line{
+  width: 33px;
+  background-color: black;
+  height: 4px;
+  margin: 3px 3px;
+}
+
 @media only screen and (max-width: 1140px){
   nav{
     flex-direction: column;
+    position: relative;
   }
   .nav-list li{
     flex-direction: column;
     float: none;
   }
-  
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    transition: all 0.5s ease-out;
+  }
+  .carrt{
+    flex-direction: column;
+    float: none;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #services{
+    flex-direction: column;
+    max-width: 100%;
+
+  }
+
+  #services .box{
+  margin-bottom: 20px;
+  margin: 56px 20px 46px 0px;
+  padding: 77px;
+  border-radius: 103px;
+  }
+
+  #services .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 86px;
+  }
+
+  .h-secondary {
+    font-size: 6.3rem;
+    padding: 15px;
+  }
+
+  #contact-box form {
+    width: 68%;
+  }
+  .burger{
+    display: block;
+  }
+  .h-nav-resp{
+    height: 72px;
+  }
+  .v-class-resp{
+    opacity: 0;
+  }
 }
