@@ -260,6 +260,10 @@ footer{
     border-radius: 86px;
   }
 
+  footer{
+    font-size: x-small;
+  }
+
   .h-secondary {
     font-size: 6.3rem;
     padding: 15px;
