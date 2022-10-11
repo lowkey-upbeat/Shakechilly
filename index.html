@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>WEBSITE</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <nav class="navbar h-nav-resp">
-      <ul class="nav-list v-class-resp">
-        <li><a href="#"></a>Home</li>
-        <li><a href="#"></a>About</li>
-        <li><a href="#"></a>Services</li>
-        <li><a href="#"></a>Contact us</li>
+      <ul class="nav-list center v-class-resp">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#serv">Services</a>
+        <a href="#contact-box">Contact us</a>
       </ul>
       <div class="carrt v-class-resp">
         <img src="img/cart.png" alt="Cart">
@@ -27,6 +27,7 @@
     </nav>
 
     <section class="background">
+      <div id="main"></div>
       <div class="box-main">
         <h1 class="h-primary">Welcome to ShakeChilly</h1>
         <p>The best food ordering website in the town.</p>
@@ -42,6 +43,7 @@
     </section> -->
 
     <section class="services-container">
+      <div id="serv"></div>
       <h1 class="h-primary center">Our services</h1>
         <div id="services">
           <div class="box">
@@ -59,8 +61,21 @@
             <h2 class="h-secondary center">Take-away</h2>
             <p class="center">Order and collect your food.</p>
           </div>
-
         </div>
+    </section>
+
+
+    <section class="about-container">
+      <h1 class="h-primary center">About Us</h1>
+      <div id="about">
+          <div class="image center">
+              <img src="img/apple.png" alt="">
+          </div>
+
+          <div class="text">
+            <p>ShakeChilly, from shakes to chilly fries, we serve it all. Our recipes have been perfected by years of research to bring to you the best taste that would blow your mind. So don't waste a second more and order online at www.shakechilly.com</p>
+          </div>
+      </div>
     </section>
 
     <section id="contact">

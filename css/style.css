@@ -19,6 +19,7 @@ nav{
 .nav-list{
   width: 50%;
   padding: inherit;
+  display: flex;
 }
 
 .carrt{
@@ -26,7 +27,9 @@ nav{
   text-align: right;
   cursor: pointer;
 }
-.navbar li{
+
+
+.navbar a{
   float: left;
   list-style: none;
   margin: 13px 20px;
@@ -34,21 +37,26 @@ nav{
   font-family: 'Baloo 2', cursive;
   font-size: 23px;
   flex-direction: row;
+  cursor: pointer;
+  z-index: -1;
+
 }
 
-.navbar li a{
+.navbar a{
+  z-index: 1;
+  position: relative;
   padding: 3px 3px;
   text-decoration: none;
-  color: white;
+
 
 }
 
-.navbar input{
+/* .navbar input{
   border: 2px solid black;
   border-radius: 14px;
   padding: 3px 17px;
   width: 129px;
-}
+} */
 
 .background{
   background: rgba(0, 0, 0, 0.7) url('../img/bg1.jpg');
@@ -56,8 +64,9 @@ nav{
   background-blend-mode: darken;
 }
 
-.service-container{
-  background-color: black;
+.services-container{
+  height: 100%;
+  padding: 59px;
 }
 
 .box-main{
@@ -132,6 +141,29 @@ nav{
 
 #services .box p{
   font-family: 'Baloo 2', cursive;
+}
+
+.about-container{
+  height: 100%;
+}
+#about{
+  display: flex;
+  height: 300px;
+}
+
+.image{
+  width: 50%;
+
+}
+
+.image img{
+  width: 30%;
+}
+
+.text{
+  width: 50%;
+  font-family: 'Baloo 2', cursive;;
+  font-size: 25px;
 }
 
 #contact{
@@ -224,14 +256,14 @@ footer{
     flex-direction: column;
     position: relative;
   }
-  .nav-list li{
+  .nav-list{
     flex-direction: column;
     float: none;
   }
   .navbar{
     flex-direction: column;
     align-items: center;
-    height: 270px;
+    height: 343px;
     transition: all 0.5s ease-out;
   }
   .carrt{
